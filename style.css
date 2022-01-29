@@ -1,0 +1,84 @@
+body {
+	font-family: "Roboto", sans-serif;
+	padding: 12px 0;
+	margin: 0;
+}
+h1 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 12px;
+}
+.container {
+	padding: 0 100px;
+}
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-nav a {
+	text-decoration: none;
+	color: black;
+}
+.main-header {
+	background-image: url("./images/hero-image.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	align-items: center;
+}
+.book-form {
+	color: white;
+	background-color: rgba(167, 177, 195, 0.2);
+	backdrop-filter: blur(8px);
+	padding: 40px;
+	width: fit-content;
+	border-radius: 24px;
+}
+label {
+	display: block;
+}
+select {
+	width: 100%;
+}
+.row {
+	display: flex;
+	margin: 0 -10px;
+}
+.row > * {
+	margin: 10px;
+}
+.car-icon {
+	width: 120px;
+	height: 120px;
+}
+.card {
+	display: flex;
+	padding: 20px 45px;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid rgb(167, 177, 195);
+	border-radius: 24px;
+	margin: 20px 0;
+}
+.card-text {
+	width: 30%;
+	min-width: 200px;
+}
+.car-image-heading {
+	display: flex;
+	align-items: center;
+}
+.car-image-heading h1 {
+	margin-left: 70px;
+	font-size: 24px;
+}
+.book {
+	display: flex;
+	flex-direction: column;
+}
+
+.price {
+	margin-bottom: 20px;
+}
