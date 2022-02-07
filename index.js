@@ -13,7 +13,7 @@ function carTemplateBuilder(cars, predicateFn) {
                 alt="Image of a car"
                 class="car-icon"
             />
-            <h1>${car.model}</h1>
+            <h1>${car.name}</h1>
         </section>
         <p class="card-text">
             ${car.description}
