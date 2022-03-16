@@ -49,3 +49,8 @@ select {
 	max-height: 200px;
 	object-fit: cover;
 }
+#loader {
+	visibility: hidden;
+	width: 2rem;
+	height: 2rem;
+}

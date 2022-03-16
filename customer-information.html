@@ -17,67 +17,93 @@
 		/>
 		<link rel="stylesheet" href="./accessory.css" />
 		<link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
-		<nav class="container main-nav">
-			<h1><a href="/index.html">SunbeamCars Inc.</a></h1>
+		<nav class="container m-auto main-nav align-items-center row">
+			<a class="h1" href="/">SunbeamCars Inc.</a>
 			<a href="/login"> <i class="fas fa-user-lock"></i> Log in </a>
 		</nav>
-		<header class="container main-header">
-		</header>
-		<main id="main-content">
+		<header class="container-fluid main-header"></header>
+		<main id="main-content" class="row container m-auto">
+			<form class="info col container alert alert-info mr-2 mt-3">
+				<h1>Select accessories excl. VAT</h1>
+				<div class="form-group">
+					<div class="form-row">
+						<div class="col">
+							<label for="firstName">First name</label>
+							<input required type="text" class="form-control" id="firstName" />
 
-            <form class="info container">
-                <h1>Select accessories excl. VAT</h1>
-                <div class="form-group">
-                    <div class="form-row">
-                        <div class="col">
-                            <label for="firstName">First name</label>
-                            <input type="text" class="form-control" id="firstName">
+							<label for="Street name">Street name</label>
+							<input
+								required
+								type="text"
+								class="form-control"
+								id="Street name"
+							/>
 
-                            <label for="Street name">Street name</label>
-                            <input type="text" class="form-control" id="Street name">
+							<label for="postCode">Postal code</label>
+							<input required type="text" class="form-control" id="postCode" />
 
-                            <label for="postCode">Postal code</label>
-                            <input type="text" class="form-control" id="postCode">
-                        </div>
-                        <div class="col">
-                            <label for="lastName">Last name</label>
-                            <input type="text" class="form-control" id="lastName">
+							<div class="form-group form-check mt-2">
+								<input
+									required
+									type="checkbox"
+									class="form-check-input"
+									id="consent"
+								/>
+								<label class="form-check-label" for="consent"
+									>I am 18 years old</label
+								>
+							</div>
+						</div>
+						<div class="col">
+							<label for="lastName">Last name</label>
+							<input required type="text" class="form-control" id="lastName" />
 
-                            <label for="number">Number / floor</label>
-                            <input type="text" class="form-control" id="number">
+							<label for="number">Number / floor</label>
+							<input required type="text" class="form-control" id="number" />
+						</div>
+					</div>
+				</div>
 
-                            <input type="checkbox" class="form-control" id="years">
-                            <label for="years">I am 18 years old</label>
-                        </div>
-                    </div>
-                </div>
+				<button class="btn btn-success btn-block btn-lg">Rent</button>
+			</form>
+			<section class="summary container col alert alert-warning ml-2 mt-3">
+				<h1>Rental information</h1>
+				<section class="alert alert-info">
+					<span>All inclusive</span>
+					<p id="total" class="mb-0">Total 1400DKK</p>
+					<small class="d-block">incl. VAT</small>
+				</section>
 
-                <button>
-                    Continue
-                </button>
-            </form>
-            <section class="summary container">
-                <div class="row">
-                    <section class="col">
-                        <h2>Well chosen!</h2>
-                            <h3 id="car-name"></h3>
-                            <p>Pick up date:</p>
-                            <p>Return date:</p>
-                            <p>Rental days:</p>
-                            <h3 id="rental-cost"></h3>
-                            <p>incl. VAT</p>
-                    </section>
-                    <section class="col">
-                        <p>All inclusive:</p>
-                        <p id="total"></p>
-                        <p>incl. VAT</p>
-                    </section>
-                </div>
-            </section>
+				<section class="car">
+					<h1 id="car-name" class="h4"></h1>
+					<p id="pick-up"></p>
+					<p id="hand-in"></p>
+					<p id="days"></p>
+				</section>
+
+				<section class="accessories">
+					<h1 class="h4">Accessories</h1>
+					<ul>
+						<li>Second driver</li>
+						<li>Child seat</li>
+						<li>Roadside aid</li>
+					</ul>
+				</section>
+
+				<section class="accessories-total">
+					<h1 id="acc-total" class="h5 mb-0"></h1>
+					<small class="d-block">incl. VAT</small>
+				</section>
+			</section>
 		</main>
-		<script src="./accessory.js"></script>
+		<script src="./customerInformation.js"></script>
 	</body>
 </html>

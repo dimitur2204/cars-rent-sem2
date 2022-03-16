@@ -17,65 +17,129 @@
 		/>
 		<link rel="stylesheet" href="./accessory.css" />
 		<link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
 	</head>
 	<body>
-		<nav class="container main-nav">
-			<h1><a href="/index.html">SunbeamCars Inc.</a></h1>
+		<nav class="container m-auto main-nav align-items-center row">
+			<a class="h1" href="/">SunbeamCars Inc.</a>
 			<a href="/login"> <i class="fas fa-user-lock"></i> Log in </a>
 		</nav>
-		<header class="container main-header">
-		</header>
+		<header class="container-fluid main-header"></header>
 		<main id="main-content">
-
-            <section class="info container">
-                <h1>Select accessories excl. VAT</h1>
-                <div class="items">
-                    <label>Second driver 450DKK
-                        <input type="checkbox" name="secondDriver">
-                    </label>
-                    <label>Second driver 95DKK
-                        <input type="checkbox" name="bigChildSeat">
-                    </label>
-                    <label>Second driver 320DKK
-                        <input type="checkbox" name="roadsideAid">
-                    </label>
-                    <label>Second driver 100DKK
-                        <input type="checkbox" name="babySeat">
-                    </label>
-                </div>
-                <div class="items">
-                    <label>Second driver 100DKK
-                        <input type="checkbox" name="smallChildSeat">
-                    </label>
-                    <label>Second driver 250DKK
-                        <input type="checkbox" name="gpsNav">
-                    </label>
-                    <label>Snow chains 188DKK
-                        <input type="checkbox" name="snowChains">
-                    </label>    
-                </div>
-                <a class="btn btn-primary" href="/customer-information.html">
-                    Continue
-                </a >
-            </section>
-            <section class="summary container">
-                <aside class="left-aside">
-                    <h2>Well chosen!</h2>
-                        <h3 id="car-name"></h3>
-                        <p>Pick up date:</p>
-                        <p>Return date:</p>
-                        <p>Rental days:</p>
-                        <h3 id="rental-cost"></h3>
-                        <p>incl. VAT</p>
-                </aside>
-                <aside class="summary">
-                    <p>All inclusive:</p>
-                    <p id="total"></p>
-                    <p>incl. VAT</p>
-                </aside>
-            </section>
-
+			<section class="info container">
+				<form id="search-form" class="info container">
+					<h1>Select accessories excl. VAT</h1>
+					<div class="form-group">
+						<div class="form-row">
+							<div class="col">
+								<div class="form-group form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="secondDriver"
+									/>
+									<label class="form-check-label" for="secondDriver"
+										>Second driver:<strong class="ml-2 d-inline-block"
+											>450DKK</strong
+										>
+									</label>
+								</div>
+								<div class="form-group form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="bigChildSeat"
+									/>
+									<label class="form-check-label" for="bigChildSeat"
+										>Big child seat:<strong class="ml-2 d-inline-block"
+											>95DKK</strong
+										></label
+									>
+								</div>
+								<div class="form-group form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="roadsideAid"
+									/>
+									<label class="form-check-label" for="roadsideAid"
+										>Roadside Aid:<strong class="ml-2 d-inline-block"
+											>320DKK</strong
+										></label
+									>
+								</div>
+								<div class="form-group form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="babySeat"
+									/>
+									<label class="form-check-label" for="babySeat"
+										>Baby seat:<strong class="ml-2 d-inline-block"
+											>100DKK</strong
+										></label
+									>
+								</div>
+							</div>
+							<div class="col">
+								<div class="form-group form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="smallChildSeat"
+									/>
+									<label class="form-check-label" for="smallChildSeat"
+										>Small child seat:<strong class="ml-2 d-inline-block"
+											>100DKK</strong
+										></label
+									>
+								</div>
+								<div class="form-group form-check">
+									<input type="checkbox" class="form-check-input" id="gpsNav" />
+									<label class="form-check-label" for="gpsNav"
+										>GPS Navigation:<strong class="ml-2 d-inline-block"
+											>250DKK</strong
+										></label
+									>
+								</div>
+								<div class="form-group form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="snowChains"
+									/>
+									<label class="form-check-label" for="snowChains"
+										>Snow chains:<strong class="ml-2 d-inline-block"
+											>180DKK</strong
+										></label
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a id="continue-link" class="btn btn-success"> Continue </a>
+				</form>
+			</section>
+			<section class="summary container">
+				<h2>Well chosen!</h2>
+				<div class="row container">
+					<section class="col car-info alert alert-primary mr-3">
+						<h3 id="car-name"></h3>
+						<p id="pick-up"></p>
+						<p id="hand-in">Hand in date:</p>
+						<p id="days">Rental days:</p>
+					</section>
+					<section class="col rental-info alert alert-success ml-3">
+						<h3 id="total" class="mb-0 mt-2"></h3>
+						<small class="d-block">incl. VAT</small>
+					</section>
+				</div>
+			</section>
 		</main>
 		<script src="./accessory.js"></script>
 	</body>
