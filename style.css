@@ -39,29 +39,6 @@ label {
 select {
 	width: 100%;
 }
-.car-icon {
-	width: 120px;
-	height: 120px;
-}
-.card-text {
-	width: 30%;
-	min-width: 200px;
-}
-.car-image-heading {
-	display: flex;
-	align-items: center;
-}
-.car-image-heading h1 {
-	margin-left: 70px;
-	font-size: 24px;
-}
-.book {
-	display: flex;
-	flex-direction: column;
-}
-.price {
-	margin-bottom: 20px;
-}
 .card {
 	width: 100%;
 	height: 100%;

@@ -6,7 +6,7 @@ function carTemplateBuilder(cars, predicateFn) {
 	return cars.filter(predicateFn).map(
 		(car) =>
 			`
-			<div class="card col">
+			<div class="card col p-0">
 				<img src="${car.imageUrl}" class="card-img-top">
 				<div class="card-body">
 					<h5 class="card-title">${car.name}</h5>
@@ -21,10 +21,8 @@ function carTemplateBuilder(cars, predicateFn) {
 
 form.addEventListener("submit", function submitHandler(event) {
 	event.preventDefault();
-	const numberOfPeople = document.getElementById("number-of-people").value;
-	const numberOfSuitcases = document.getElementById(
-		"number-of-suitcases"
-	).value;
+	const numberOfPeople = document.getElementById("people").value;
+	const numberOfSuitcases = document.getElementById("suitcases").value;
 
 	fetch(
 		"https://raw.githubusercontent.com/dimitur2204/cars-rent-sem2/main/cars.json"

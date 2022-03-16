@@ -18,7 +18,7 @@
     {
         "imageUrl":"./images/bmw-f10.jpeg",
         "name":"BMW",
-        "description":"The sixth generation of the BMW 5 Series consists of the BMW F10 (sedan version), BMW F11",
+        "description":"The sixth generation of the BMW 5 Series consists of the BMW F10 (sedan version)",
         "price":261500,
         "seats": 7,
         "suitcasesFit": 5
