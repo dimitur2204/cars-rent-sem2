@@ -8,9 +8,6 @@ h1 {
 	margin: 0;
 	margin-bottom: 12px;
 }
-.container {
-	padding: 0 100px;
-}
 .main-nav {
 	display: flex;
 	justify-content: space-between;
@@ -42,25 +39,9 @@ label {
 select {
 	width: 100%;
 }
-.row {
-	display: flex;
-	margin: 0 -10px;
-}
-.row > * {
-	margin: 10px;
-}
 .car-icon {
 	width: 120px;
 	height: 120px;
-}
-.card {
-	display: flex;
-	padding: 20px 45px;
-	justify-content: space-between;
-	align-items: center;
-	border: 1px solid rgb(167, 177, 195);
-	border-radius: 24px;
-	margin: 20px 0;
 }
 .card-text {
 	width: 30%;
@@ -78,7 +59,16 @@ select {
 	display: flex;
 	flex-direction: column;
 }
-
 .price {
 	margin-bottom: 20px;
+}
+.card {
+	width: 100%;
+	height: 100%;
+}
+.card-img-top {
+	width: 100%;
+	height: 100%;
+	max-height: 200px;
+	object-fit: cover;
 }

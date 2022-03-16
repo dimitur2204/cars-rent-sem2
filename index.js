@@ -6,23 +6,15 @@ function carTemplateBuilder(cars, predicateFn) {
 	return cars.filter(predicateFn).map(
 		(car) =>
 			`
-    <section class="card">
-        <section class="car-image-heading">
-            <img
-                src="${car.imageUrl}"
-                alt="Image of a car"
-                class="car-icon"
-            />
-            <h1>${car.name}</h1>
-        </section>
-        <p class="card-text">
-            ${car.description}
-        </p>
-        <section class="book">
-            <span class="price">DKK ${car.price}</span>
-            <button>Book now</button>
-        </section>
-    </section>
+			<div class="card col">
+				<img src="${car.imageUrl}" class="card-img-top">
+				<div class="card-body">
+					<h5 class="card-title">${car.name}</h5>
+					<p class="card-text">
+					${car.description}</p>
+					<a href="/accesory.html?name=${car.name}&price=${car.price}" class="btn btn-primary">Book now</a>
+				</div>
+				</div>
     `
 	);
 }
