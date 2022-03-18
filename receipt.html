@@ -36,42 +36,18 @@
 				<div class="form-group">
 					<div class="form-row">
 						<div class="col">
-							<label for="firstName">First name</label>
-							<input required type="text" class="form-control" id="firstName" />
-
-							<label for="Street name">Street name</label>
-							<input
-								required
-								type="text"
-								class="form-control"
-								id="streetName"
-							/>
-							<label for="postalCode">Postal code</label>
-							<select class="form-control" id="postalCode"></select>
-
-							<div class="form-group form-check mt-2">
-								<input
-									required
-									type="checkbox"
-									class="form-check-input"
-									id="consent"
-								/>
-								<label class="form-check-label" for="consent"
-									>I am 18 years old</label
-								>
-							</div>
-						</div>
-						<div class="col">
-							<label for="lastName">Last name</label>
-							<input required type="text" class="form-control" id="lastName" />
-
-							<label for="number">Number / floor</label>
-							<input required type="text" class="form-control" id="number" />
+							<p id="firstName"></p>
+							<p id="streetName"></p>
+							<p id="postalCode"></p>
+							<p id="lastName"></p>
+							<p id="number"></p>
 						</div>
 					</div>
 				</div>
 
-				<a href="/receipt.html" class="btn btn-primary btn-block">Rent</a>
+				<a href="/success.html" class="btn btn-success btn-block btn-lg"
+					>Rent</a
+				>
 			</form>
 			<section class="summary container col alert alert-warning ml-2 mt-3">
 				<h1>Rental information</h1>
@@ -99,6 +75,6 @@
 				</section>
 			</section>
 		</main>
-		<script src="./customerInformation.js"></script>
+		<script src="./receipt.js"></script>
 	</body>
 </html>

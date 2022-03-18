@@ -6,7 +6,7 @@
 	const main = document.getElementById("main-content");
 	const form = document.getElementById("search-form");
 
-	function carTemplateBuilder({ cars, handInDate, pickUpDate }, predicateFn) {
+	function carTemplateBuilder({ cars }, predicateFn) {
 		return cars.filter(predicateFn).map(
 			(car) =>
 				`
