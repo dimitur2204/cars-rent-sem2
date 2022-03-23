@@ -12,6 +12,7 @@
 			const idToSlide = trigger.attributes["slide-id"].value;
 			const el = document.getElementById(idToSlide);
 			el.style.height = 0;
+
 			trigger.addEventListener("click", (e) => {
 				if (el.classList.contains("hide")) {
 					slideDown(el);
